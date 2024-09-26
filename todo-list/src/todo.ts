@@ -17,5 +17,3 @@ export async function getTodoList(): Promise<Todo[]> {
     return [];
   }
 }
-
-getTodoList();

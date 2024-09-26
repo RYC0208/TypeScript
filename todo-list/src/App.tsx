@@ -17,7 +17,7 @@ const App = () => {
     fetchData();
   }, []);
 
-  const handleTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
   };
 
@@ -69,7 +69,7 @@ const App = () => {
   return (
     <>
       <h1>TODO LIST</h1>
-      <input type="text" onChange={handleTitleChange} />
+      <input type="text" onChange={handleTextChange} />
       <button onClick={handleAddTodo}>추가하기</button>
       <TodoList
         todoList={todoList}
